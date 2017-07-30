@@ -1,14 +1,16 @@
-/*RESET*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+*, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}
 
 /*MAIN*/
 /*#fda30e*/
+
 body { 
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: 'Lato', sans-serif;
-	background: #f9f9f9;
-	color: #555;
+	background: #f1f1f1;
+	height: 100vh;
+	color: #B9B5C7; 
+	font: 14px 'Open Sans', sans-serif;
 }
 
 a {
@@ -36,12 +38,11 @@ header {
 	background: #fff;
 	width: 100%;
 	height: 76px;
-	position: fixed;
 	top: 0;
 	left: 0;
 	border-bottom: 1px solid #D3D3D3;
 	z-index: 100;
-
+	margin: 0px 0px 80px 0px;
 }
 
 #logo{
@@ -106,30 +107,6 @@ li a {
     padding: 12px;
 }
 
-section {
-
-	margin: 80px auto 40px;
-	max-width: 980px;
-	position: relative;
-	padding: 20px
-
-}
-
-h1 {
-
-	font-size: 2em;
-	color: #2262AD;
-	line-height: 1.15em;
-	margin: 20px 0 ;
-
-}
-
-p {
-
-	line-height: 1.45em;
-	margin-bottom: 20px;
-
-}
 
 /*Fffff */
 
@@ -171,8 +148,60 @@ p {
     display: block;
 }
 
+/* 00000000000000000000000000000000 */
+ 
+   h1 {
+   		padding: 100px 0; 
+   		font-weight: 400; 
+   		text-align: center;
+   	}
+
+   p {
+   		margin: 0 0 20px; 
+   		line-height: 1.5;
+   	}
+ 
+   .main {
+   		margin: 0 auto; 
+   		min-width: 320px; 
+   		max-width: 800px;
+   	}
+
+   .content {
+   		background: #fff; 
+   		color: #373737;
+   		border: 1px solid #D3D3D3;
+   	}
+
+   .content > div {
+   		display: none; 
+   		padding: 20px 25px 5px;
+   	}
+ 
+   input {display: none;}
+   label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;}
+   label:hover {color: #fff; cursor: pointer;}
+   input:checked + label {background: #fda30e; color: black;}
+ 
+   #tab1:checked ~ .content #content1,
+   #tab2:checked ~ .content #content2,
+   #tab3:checked ~ .content #content3,
+   #tab4:checked ~ .content #content4 {
+     display: block;
+   }
+ 
+
+/* --------------------------------*/
+
 
 /*MEDIA QUERY*/
+
+@media screen and (max-width: 400px) { 
+	label {
+		padding: 15px 10px;
+	} 
+}
+
 @media only screen and (max-width : 640px) {
 
 	header {
