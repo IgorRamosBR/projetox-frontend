@@ -47,10 +47,10 @@
 <div class="main">
   
       <input id="tab1" type="radio" name="tabs" checked>
-      <label for="tab1">Minha Loja</label>
+      <label for="tab1">Minhas Peças</label>
   
       <input id="tab2" type="radio" name="tabs">
-      <label for="tab2">Minhas Peças</label>
+      <label for="tab2">Minha Loja</label>
   
       <input id="tab3" type="radio" name="tabs">
       <label for="tab3">Minha Conta</label>
@@ -63,13 +63,53 @@
         </div>
   
         <div id="content2">
-        <p>
-         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+        <form method="POST">
+          <div class="row">
+            <h2>Dados da Loja</h2>
+            <div class="form-group">
+              <label for="nome">Nome</label> <input type="text"
+                class="form-control" id="nome"
+                placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <label for="rzsocial">Razão Social</label> <input type="text"
+                class="form-control" id="rzsocial"
+                placeholder="Razão Social">
+            </div>
+            <div class="form-group">
+              <label for="tel1">Telefone 1</label> <input type="text"
+                class="form-control" id="tel1"
+                placeholder="Telefone 1">
+            </div>
+            <div class="form-group">
+              <label for="tel2">Telefone 2</label> <input type="text"
+                class="form-control" id="tel2"
+                placeholder="Telefone 2">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label> <input type="email"
+                class="form-control" id="email"
+                placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <label for="info">Informações Adicionais</label>
+              <textarea class="form-control"
+                id="info" rows="3"> </textarea>
+            </div>
+            <div class="form-group">
+              <label for="site">Site</label> <input type="text"
+                class="form-control" id="site"
+                placeholder="Site">
+            </div>
+            <div class="form-group">
+              <label for="CNPJ">CNPJ</label> <input type="text"
+                class="form-control" id="CNPJ"
+                placeholder="CNPJ">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar Loja</button>
+          </div>
+        </form>
 
-         <p>
-         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
       
       
         </div>
@@ -80,7 +120,7 @@
         </p>
 
         </div>
-  
+        <!--
         <div id="content4">
         <p>
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -92,6 +132,7 @@
       
 
         </div>
+        -->
       </div>
   
 </div>
