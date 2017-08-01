@@ -3,12 +3,22 @@
 /*MAIN*/
 /*#fda30e*/
 
+
+.row{
+	margin: 0px; 
+}
+
+
+.form-control{
+	border-radius: 1px;
+}
+
 body { 
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: 'Lato', sans-serif;
 	background: #f1f1f1;
-	height: 100vh;
+	height: 150vh;
 	color: #B9B5C7; 
 	font: 14px 'Open Sans', sans-serif;
 }
@@ -191,6 +201,51 @@ li a {
    }
  
 
+
+.form-loja{
+	width: 90%;
+    margin: 0 auto;
+}
+
+.form-loja label{
+	padding: 15px 10px;
+	font-weight: initial!important;
+}
+
+.form-loja h2{
+	font-weight: 200;
+}
+
+#nome{
+	width: 72%;
+}
+
+#rzsocial{
+	width: 53%;
+}
+
+#email{
+	width: 65%;
+}
+
+#info{
+	height: 140px;
+	margin: 10px;
+}
+
+#site{
+	width: 50%;
+}
+
+#CNPJ{
+	width: 45%;
+}
+
+.btn-enviar{
+	background-color: #fda30e!important;
+	    border-color: white;
+	color: black;    
+}
 /* --------------------------------*/
 
 
