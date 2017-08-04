@@ -1,0 +1,24 @@
+.file-input-wrapper {
+    height: 35px;
+    overflow: hidden;
+    position: absolute;
+    width: 123px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.file-input-wrapper > input[type="file"] {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background: #fda30e; 
+    color: black;
+    font-weight: 600; 
+    text-align: center;
+}

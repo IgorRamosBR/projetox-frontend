@@ -2,46 +2,129 @@
 <html>
 
 <head>
-    <title>Easy-Peça - O melhor buscador de peças automotivas do Brasil</title>
-    <!-- for-mobile-apps -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/anunciante.css" rel="stylesheet" type="text/css" media="all" />
+  <title>Easy-Peça - O melhor buscador de peças automotivas do Brasil</title>
+  <!-- for-mobile-apps -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- //for-mobile-apps -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/anunciante.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/tab-wizard.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 
 <body>
 
-<header>
+  <header>
 
-  <a href="#" id="logo"></a>
+    <a href="#" id="logo"></a>
 
     <nav>
 
       <a href="#" id="menu-icon"></a>
 
-        <ul>
+      <ul>
 
-          <li><a href="#">Meus Anuncios</a></li>
+        <li><a href="#">Meus Anuncios</a></li>
 
-          <div class="dropdown" style="float:right;">
-            <button class="dropbtn"><i class="fa fa-cog" aria-hidden="true"></i></button>
-              <div class="dropdown-content">
-                <a href="#">Configuração</a>
-                <a href="#">Sair</a>
-              </div>
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn"><i class="fa fa-cog" aria-hidden="true"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Configuração</a>
+            <a href="#">Sair</a>
           </div>
+        </div>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row form-group">
+      <div class="col-xs-12">
+        <ul class="nav nav-pills nav-justified thumbnail setup-panel">
+          <li class="active">
+            <a href="#step-1">
+              <h4 class="list-group-item-heading">Peça</h4>
+              <p class="list-group-item-text">Informações gerais da peça</p>
+            </a>
+          </li>
+          <li class="disabled">
+            <a href="#step-2">
+              <h4 class="list-group-item-heading">Foto</h4>
+              <p class="list-group-item-text">Carregamento da imagem</p>
+            </a>
+          </li>
+          <li class="disabled">
+            <a href="#step-3">
+              <h4 class="list-group-item-heading">Recomendação</h4>
+              <p class="list-group-item-text">Lista de automóveis compatíveis</p>
+            </a>
+          </li>
+
 
         </ul>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-1">
+      <div class="col-xs-12">
+        <div class="col-md-12 well text-center">
+          <h1> STEP 1</h1>
+
+          <button id="activate-step-2" class="btn btn-primary btn-md">Avançar</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-2">
+      <div class="col-xs-12">
+        <div class="col-md-12 well text-center">
+          <h1 class="text-center"> STEP 2</h1>
+
+          <div class="container">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <form class="well" action="upload.php" method="post" enctype="multipart/form-data">
+                  <div class="form-group">
+                    <label for="file">Selecione um arquivo para upload</label>
+                    <input type="file" name="file">
+                    <p class="help-block">Apenas arquivos .jpg, .jpeg, .png e .gif são suportados.</p>
+                  </div>
+                  <input type="submit" class="btn btn-lg btn-primary" value="Upload">
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /container -->
 
 
 
-    </nav>
 
-</header>
-<script src="https://use.fontawesome.com/852d9658e9.js"></script>
+          <button id="activate-step-3" class="btn btn-primary btn-md">Avançar</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-3">
+      <div class="col-xs-12">
+        <div class="col-md-12 well text-center">
+          <h1 class="text-center"> STEP 3</h1>
+
+          <form></form>
+
+          <button id="activate-step-4" class="btn btn-primary btn-md">Activate Step 4</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/tab-wizard.js"></script>
+  <script src="https://use.fontawesome.com/852d9658e9.js"></script>
 </body>
+
 </html>
