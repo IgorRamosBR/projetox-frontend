@@ -3,12 +3,27 @@
 /*MAIN*/
 /*#fda30e*/
 
+
+.row{
+	margin: 0px; 
+}
+
+.legend{
+	padding: 15px;
+	margin-bottom: 35px;
+}
+
+
+.form-control{
+	border-radius: 1px;
+}
+
 body { 
 	font-size: 1.05em;
 	line-height: 1.25em;
 	font-family: 'Lato', sans-serif;
 	background: #f1f1f1;
-	height: 100vh;
+	height: 200vh;
 	color: #B9B5C7; 
 	font: 14px 'Open Sans', sans-serif;
 }
@@ -178,9 +193,9 @@ li a {
    		padding: 20px 25px 5px;
    	}
  
-   .tab-anunciante {display: none;}
+   input {display: none;}
    label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;}
-   label:hover {color: #fff; cursor: pointer;}
+   label:hover {color: grey; cursor: pointer;}
    input:checked + label {background: #fda30e; color: black;}
  
    #tab1:checked ~ .content #content1,
@@ -190,6 +205,71 @@ li a {
      display: block;
    }
  
+.form-group label::after{
+	content: " :";
+}
+
+.form-loja{
+	width: 90%;
+    margin: 0 auto;
+}
+
+form label{
+	padding: 15px 10px;
+	font-weight: initial!important;
+}
+
+.form-loja h2{
+	font-weight: 200;
+}
+
+#nome{
+	width: 72%;
+}
+
+#rzsocial{
+	width: 53%;
+}
+
+#email{
+	width: 65%;
+}
+
+#info{
+	height: 140px;
+	margin: 10px;
+}
+
+#site, #CEPVendedor{
+	width: 50%;
+}
+
+#CNPJ{
+	width: 45%;
+}
+
+.btn-enviar{
+	background-color: #fda30e!important;
+	    border-color: white;
+	color: black;
+	margin: 20px 0px 20px 0px;    
+}
+
+#emailVendedor{
+	width: 90%;
+}
+
+#idUsuario, #estadoLoja, #senhaVendedor{
+	width: 60%;
+}
+
+#idSenha{
+	width: 70%;
+}
+
+#numeroEnderecoVendedor{
+	width: 25%;
+}
 
 /* --------------------------------*/
 
