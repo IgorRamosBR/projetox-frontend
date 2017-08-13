@@ -4,20 +4,6 @@
 /*#fda30e*/
 
 
-.row{
-	margin: 0px; 
-}
-
-.legend{
-	padding: 15px;
-	margin-bottom: 35px;
-}
-
-
-.form-control{
-	border-radius: 1px;
-}
-
 body { 
 	font-size: 1.05em;
 	line-height: 1.25em;
@@ -70,77 +56,4 @@ img {
 
    
  
-.form-group label::after{
-	content: " :";
-}
-
-.form-loja{
-	width: 90%;
-    margin: 0 auto;
-}
-
-form label{
-	padding: 15px 10px;
-	font-weight: initial!important;
-}
-
-.form-loja h2{
-	font-weight: 200;
-}
-
-#nome{
-	width: 72%;
-}
-
-#rzsocial{
-	width: 53%;
-}
-
-#email{
-	width: 65%;
-}
-
-#info{
-	height: 140px;
-	margin: 10px;
-	width: 83%;
-}
-
-#site, #CEPVendedor{
-	width: 50%;
-}
-
-#CNPJ{
-	width: 45%;
-}
-
-.btn-enviar{
-	background-color: #fda30e!important;
-	    border-color: white;
-	color: black;
-	margin: 20px 0px 20px 0px;    
-}
-
-#emailVendedor{
-	width: 90%;
-}
-
-#idUsuario, #estadoLoja, #senhaVendedor{
-	width: 60%;
-}
-
-#idSenha{
-	width: 70%;
-}
-
-#numeroEnderecoVendedor{
-	width: 25%;
-}
-
-/* --------------------------------*/
-
-
-/*MEDIA QUERY*/
-
-
 
