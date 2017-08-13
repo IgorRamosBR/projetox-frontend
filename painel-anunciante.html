@@ -10,26 +10,27 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/anunciante.css" rel="stylesheet" type="text/css" media="all" />
+     <link href="css/simple-header.css" rel="stylesheet" type="text/css" media="all" /> 
 </head>
 
 
 <body>
 
-<header>
+<header class="header-group" >
 
-  <a href="#" id="logo"></a>
+  <a href="#" class="header-logo" id="logo"></a>
 
     <nav>
 
-      <a href="#" id="menu-icon"></a>
+      <a href="#" class="header-menu-icon" id="menu-icon"></a>
 
         <ul>
 
           <li><a href="#">Meus Anuncios</a></li>
-          <li class="newads-list"><a href="#" class="novoads">Novo Anuncio</a></li>
+          <li class="newads-list"><a href="#" class="btn-highlight">Novo Anuncio</a></li>
 
           <div class="dropdown" style="float:right;">
-            <button class="dropbtn"><i class="fa fa-cog" aria-hidden="true"></i></button>
+            <button class="dropdown-btn"><i class="fa fa-cog" aria-hidden="true"></i></button>
               <div class="dropdown-content">
                 <a href="#">Configuração</a>
                 <a href="#">Sair</a>
@@ -65,8 +66,8 @@
         <div id="content2">
         <form method="POST" class="form-loja">
           <div class="row">
-            <h2>Dados da Loja</h2>
-            <hr>
+            <!-- Form Name -->
+            <legend class="legend">Minha Conta</legend>
             <div class="form-group form-inline">
               <label for="nome">Nome <span style="color: red;">*</span></label> <input type="text"
                 class="form-control" id="nome"
