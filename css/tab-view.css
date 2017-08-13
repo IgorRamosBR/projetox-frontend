@@ -1,0 +1,28 @@
+.content {
+   		background: #fff; 
+   		color: #373737;
+   		border: 1px solid #D3D3D3;
+   	}
+
+.content > div {
+   		display: none; 
+   		padding: 20px 25px 5px;
+   	}
+ 
+.tab-input {display: none;}
+.tab-label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;}
+.tab-label:hover {color: grey; cursor: pointer;}
+.tab-input:checked + label {background: #fda30e; color: black;}
+
+#tab1:checked ~ .content #content1,
+#tab2:checked ~ .content #content2,
+#tab3:checked ~ .content #content3,
+#tab4:checked ~ .content #content4 {
+    display: block;
+}
+
+@media screen and (max-width: 400px) { 
+	.tab-label {
+		padding: 15px 10px;
+	} 
+}
