@@ -5,6 +5,7 @@
 .legend{
 	padding: 15px;
 	margin-bottom: 35px;
+	font-size: 25px;
 }
 
 .form-control{
@@ -41,17 +42,17 @@ form label{
 	width: 65%;
 }
 
-#info{
+#info, #especificacao{
 	height: 140px;
 	margin: 10px;
 	width: 83%;
 }
 
-#site, #CEPVendedor{
+#site, #CEPVendedor, #modeloPeca{
 	width: 50%;
 }
 
-#CNPJ{
+#CNPJ, #marcaPeca{
 	width: 45%;
 }
 
@@ -76,4 +77,71 @@ form label{
 
 #numeroEnderecoVendedor{
 	width: 25%;
+}
+
+/* NOVO anuncio */
+.btn-enviar{
+	background-color: #fda30e!important;
+	    border-color: white;
+	color: black;
+	margin: 20px 0px 20px 0px;    
+}
+
+#emailVendedor{
+	width: 90%;
+}
+
+#idUsuario, #estadoLoja, #senhaVendedor{
+	width: 60%;
+}
+
+#idSenha{
+	width: 70%;
+}
+
+#numeroEnderecoVendedor{
+	width: 25%;
+}
+
+/* --------------------------------*/
+.pecasContainer h2, p{
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+
+.pecasContainer hr{
+	border-color: #f1f1f1;
+	margin: 30px 0px 30px 0px;
+}
+
+/* --------------------------------*/
+
+.areaUpload{
+	cursor: pointer;
+    padding: 43px 54px;
+    border: 2px dashed #0087F7;
+    border-radius: 5px;
+    background: white;
+    max-width: 456px;
+    background-color: white;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.areaUpload img{
+	width: 60px;
+}
+
+.descFoto{
+	text-align: left;
+}
+
+.contentUpload{}
+
+/* /novo anuncio*/
+
+@media screen and (max-width: 400px) { 
+	label {
+		padding: 15px 10px;
+	} 
 }

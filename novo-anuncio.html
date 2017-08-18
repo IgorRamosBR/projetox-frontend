@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <!-- //for-mobile-apps -->
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> 
   <link href="css/anunciante.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/form-basic.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/form-anunciante.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/simple-header.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
@@ -43,56 +43,60 @@
   <div class="container">
     <div class="row" >
       <div class="col-xs-12">
-        <div class="col-md-12 well text-center">
-          <form class="form-basic" method="post" action="#">
-
-            <div class="form-title-row">
-              <h1>Dados da Peça</h1>
+        <div class="col-md-12 well">
+          <form method="POST" class="form-loja">
+          <div class="row pecasContainer">
+            <h2>Falta pouco para você vender!</h2>
+            <p>Coloque uma bela descrição e capriche nas informações :)</p>
+            <hr>
+            <div class="form-group form-inline">
+              <label for="nome">Nome <span style="color: red;">*</span></label> 
+                <input type="text" class="form-control" id="nome" placeholder="Suspensão">
+            </div> 
+            <div class="form-group form-inline">
+              <label for="modeloPeca">Modelo <span style="color: red;">*</span></label> 
+              <input type="text" class="form-control" id="modeloPeca" placeholder="UP-21293">
+            </div>
+            <div class="form-group form-inline">
+              <label for="marcaPeca">Marca <span style="color: red;">*</span></label> 
+              <input type="text" class="form-control" id="marcaPeca" placeholder="Pula-Pula">
+            </div>
+            <div class="form-group form-inline">
+              <label for="fabricante">Fabricante <span style="color: red;">*</span></label> 
+              <input type="text"  class="form-control" id="fabricante" placeholder="CM-Elastica LTDA">
+            </div>
+            <div class="form-group">
+              <label for="info">Descrição</label>
+              <textarea class="form-control"
+                id="info" rows="3"> </textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="especificacao">Especificação</label>
+              <textarea class="form-control"
+                id="especificacao" rows="3"> </textarea>
             </div>
 
-            <div class="form-row">
-              <label>
-                    <span>Nome</span>
-                    <input type="text" name="nome">
-                </label>
+            <hr>
+
+            <h2 class="descFoto">Adicione imagens do seu produto</h2>
+            <p>Escolha uma bela foto para representar bem a qualidade do seu produto</p>
+
+            <div class="form-group">
+              <div class="areaUpload">
+                <p>Arraste o arquivo aqui ou clique para carregar uma foto</p>
+                <p style="color: grey; font-size: 12px;">*Tamanho máximo permitido será 5mb por imagem</p>
+                <picture>
+                  <img src="images/upload-to-cloud.png">
+                </picture>
+              </div>
             </div>
 
-            <div class="form-row">
-              <label>
-                    <span>Modelo</span>
-                    <input type="text" name="modelo">
-                </label>
-            </div>
+            <hr>
 
-            <div class="form-row">
-              <label>
-                    <span>Marca</span>
-                    <input type="text" name="marca">
-                </label>
-            </div>
-
-            <div class="form-row">
-              <label>
-                    <span>Especificacao</span>
-                    <textarea name="especificao"></textarea>
-                </label>
-            </div>
-
-            <div class="form-row">
-              <label>
-                    <span>Descrição</span>
-                    <textarea name="descricao"></textarea>
-                </label>
-            </div>
-
-            <div class="form-row">
-              <label>
-                    <span>Valor</span>
-                    <input type="text" name="valor">
-                </label>
-            </div>
-
-          </form>
+            <button type="submit" class="btn btn-primary btn-enviar">Anunciar</button>
+          </div>
+        </form>
 
         </div>
       </div>
