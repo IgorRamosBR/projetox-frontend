@@ -14,6 +14,10 @@
     <link href="css/form-anunciante.css" rel="stylesheet" type="text/css" media="all" /> 
 </head>
 
+<style>
+
+ 
+</style>
 
 <body>
 
@@ -61,49 +65,71 @@
         <div id="content1">
             <legend class="legend">Minhas Peças</legend>
 
-            <table class="table">
+            
+            <table class="table-products table">
                 <thead style="background: #fda30e; color: black;">
-                <tr>
-                    <th>#</th>
-                    <th>Modelo</th>
+                <tr class="head-lines">
+                    <th></th>
+                    <th>Anuncios</th>
+                    <th>Resumo</th>
                     <th>Marca</th>
                     <th>Valor</th>
                     <th>Ações</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Rolamento de Roda</td>
+                <tr class="trGrid">
+                    <th class="thGrid" scope="row">1</th>
+                    <td><img class="tdImageProduct" src="images/products/pd1.png"></td>
+                    <td class="tdProduct">
+                      <a class="productName" href="#">Rolamento de Roda</a>
+                      <span class="spanProduct">
+                        Categoria: <a class="productCategory" href="#">CARROS</a> 
+                      </span>
+                    </td>
                     <td>SKF</td>
                     <td>R$68,23</td>
-                    <td>
-                        <button type="button" class="btn btn-info">Editar</button>
-                        <button type="button" class="btn btn-primary">Publicar</button>
+                    <td class="btns-action">
+                        <button type="button" class="btn btn-info btn-general">Editar</button>
+                        <button type="button" class="btn btn-primary btn-general">Publicar</button>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Amortecedor Dianteiro</td>
+                <tr class="trGrid">
+                    <th class="thGrid" scope="row">2</th>
+                    <td><img class="tdImageProduct" src="images/products/no-image.png"></td>
+                    <td class="tdProduct">
+                      <a class="productName" href="#">Amortecedor Dianteiro</a>
+                      <span class="spanProduct">
+                        Categoria: <a class="productCategory" href="#">CARROS</a> 
+                      </span>
+                    </td>
                     <td>Nakata</td>
                     <td>R$173,57</td>
-                    <td>
-                        <button type="button" class="btn btn-info">Editar</button>
-                        <button type="button" class="btn btn-success">Publicado</button>
+                    <td class="btns-action">
+                        <button type="button" class="btn btn-info btn-general">Editar</button>
+                        <button type="button" class="btn btn-primary btn-general">Publicar</button>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Bieleta</td>
-                    <td>Nakata</td>
+                <tr class="trGrid">
+                    <th class="thGrid" scope="row">3</th>
+                    <td><img class="tdImageProduct" src="images/products/pd3.jpg"></td>
+                    <td class="tdProduct">
+                      <a class="productName" href="#">Bieleta</a>
+                      <span class="spanProduct">
+                        Categoria: <a class="productCategory" href="#">MOTOS</a> 
+                      </span>
+                    </td>
+                    <td>SKF</td>
                     <td>R$30,00</td>
-                    <td>
-                        <button type="button" class="btn btn-info">Editar</button>
-                        <button type="button" class="btn btn-primary">Publicar</button>
+                    <td class="btns-action">
+                        <button type="button" class="btn btn-info btn-general">Editar</button>
+                        <button type="button" class="btn btn-primary btn-general">Publicar</button>
                     </td>
                 </tr>
                 </tbody>
             </table>
+
+
         </div>
   
         <div id="content2">

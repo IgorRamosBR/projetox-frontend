@@ -11,9 +11,10 @@
   <link href="css/anunciante.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/form-anunciante.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/simple-header.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/tab-compativel.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/buttons.css" rel="stylesheet" type="text/css" media="all" />
 
 </head>
-
 
 <body>
 
@@ -43,12 +44,15 @@
   <div class="container">
     <div class="row" >
       <div class="col-xs-12">
-        <div class="col-md-12 well">
-          <form method="POST" class="form-loja">
-          <div class="row pecasContainer">
+        <div class="col-md-12 well wrapper">
+
             <h2>Falta pouco para você vender!</h2>
             <p>Coloque uma bela descrição e capriche nas informações :)</p>
-            <hr>
+            <hr class="hr-bar"> 
+            <hr class="hr-space">
+
+          <form method="POST" class="form-loja">
+          <div class="row pecasContainer">
             <div class="form-group form-inline">
               <label for="nome">Nome <span style="color: red;">*</span></label> 
                 <input type="text" class="form-control" id="nome" placeholder="Suspensão">
@@ -72,10 +76,11 @@
                 id="especificacao" rows="3"> </textarea>
             </div>
 
-            <hr>
+            <hr class="hr-space">
 
             <h2 class="descFoto">Adicione imagens do seu produto</h2>
             <p>Escolha uma bela foto para representar bem a qualidade do seu produto</p>
+            <hr class="hr-bar"> 
 
             <div class="form-group">
               <div class="areaUpload">
@@ -87,11 +92,44 @@
               </div>
             </div>
 
-            <hr>
+            <hr class="hr-space">
+              
+            <h2 class="descFoto">Adicione imagens do seu produto</h2>
+            <p>Escolha uma bela foto para representar bem a qualidade do seu produto</p>
+              
+            <hr class="hr-bar">  
 
-            <button type="submit" class="btn btn-primary btn-enviar">Anunciar</button>
+                    
+                           
+                          <table class="table-compativel table" id="data_table">
+                            <thead style="background: #fda30e; color: black;">
+                              <tr class="head-lines">
+                                <th>Tipo Veiculo</th>
+                                <th>Montadora</th>
+                                <th>Modelo</th>
+                                <th>Ano</th>
+                                <th><button type="button" class="add button button button-primary button-circle button-small" onclick="add_row();"><i class="fa fa-plus"></i></button></th>
+                              </tr>
+                            </thead>
+                            <tbody class="inputWrapper">  
+                              <tr>
+                                <td><div class="form-group"><input type="text" id="new_name" class="form-control"></div></td>
+                                <td><div class="form-group"><input type="text" id="new_country" class="form-control"></div></td>
+                                <td><div class="form-group"><input type="text" id="new_age" class="form-control"></div></td>
+                                <td><div class="form-group"><input type="text" id="new_modelo" class="form-control"></div></td>
+                                <td><button type="button" id='save_button"+table_len+"' value='Salvar' class='save' onclick='save_row("+table_len+")'></button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                
+                <section class="sendBtnSection">
+                    <button type="submit" class="btn btn-primary btn-enviar">Anunciar</button>
+                </section>             
+            
           </div>
         </form>
+
+
 
         </div>
       </div>
@@ -100,8 +138,8 @@
 
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/editarTabela.js"></script>
   <script src="https://use.fontawesome.com/852d9658e9.js"></script>
-
 </body>
 
 </html>

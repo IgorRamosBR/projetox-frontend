@@ -34,6 +34,13 @@ img {
 
 }
 
+.hr-bar{
+   color: #FDA30E!important;
+   max-width: 191px;
+   border: 1px solid #fda30e;
+   margin: 37px auto;
+}
+
 
 /* 00000000000000000000000000000000 */
  

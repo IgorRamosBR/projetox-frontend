@@ -21,8 +21,128 @@
     display: block;
 }
 
-@media screen and (max-width: 400px) { 
-	.tab-label {
-		padding: 15px 10px;
-	} 
+.trGrid , .trGrid td{
+  height: 90px;
+  
 }
+
+.trGrid td, th{
+  display: table-cell;
+  vertical-align: middle!important;
+}
+
+.tdImageProduct{
+  height: 60px;
+  width: auto;
+}
+
+
+.spanProduct{
+  font-size: 11px;
+}
+
+.productCategory{
+  color: #fd5d53;
+  text-decoration: underline;
+}
+
+.productName{
+  display: block; 
+  text-transform: uppercase; 
+  margin-bottom: 10px; 
+  font-weight: normal;
+}
+
+.btn{
+  border-radius: 0px;
+}
+
+.btns-action{
+  display: table-cell;
+  text-align: center;
+}
+
+ .table-products {
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .table-products tr {
+
+    padding: 5px;
+  }
+
+  .table-products th, .table-products td {
+    padding: 10px;
+  }
+
+  .head-lines th:last-child{
+    text-align: center;
+  }
+
+  .table-products th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .table-products {
+      border: 0;
+    }
+
+    .table-products tr {
+      margin-bottom: 10px;
+
+    }
+
+    .table-products td {
+      font-size: 13px;
+
+    }
+
+    .table-products td:last-child {
+      border-bottom: 0;
+    }
+
+    .table-products td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    button{
+      text-indent: -99999px;
+      background: url(/images/checked.png) no-repeat center center;
+    
+    }
+  }
+
+   @media screen and (max-width: 710px){
+      .btn{
+        content: "";
+        margin-bottom: 5px;
+        
+      }
+
+      .trGrid td:nth-child(4), .trGrid td:nth-child(5) {
+        display: none;
+        visibility: hidden;
+      }
+
+      .head-lines th{
+        text-align: left;
+        font-size: 0.9em;
+      }
+
+      .head-lines th:nth-child(4), .head-lines th:nth-child(5){
+        display: none;
+        visibility: hidden;
+      }
+   }
+
